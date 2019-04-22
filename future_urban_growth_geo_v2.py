@@ -246,7 +246,7 @@ def logistic_regression(file):
 '''
 def MCE(rasters, weights, ag_pen, ag_rst, ag_fac):
 
-    rasters = [r for r in rasters if r != 'urban_change_90_17.tif'] ### Not sure why urban change gets added to attractors
+    rasters = [r for r in rasters if r != 'urban_change_90_17.tif'] 
     
     rst = getRaster(rasters[0])
     rst = rst*(weights[0])
@@ -324,7 +324,7 @@ def execution(att, rest, dem, w, subr, subrm, ag_pen, ag_rst, ag_fac):
         bin_raster = np.zeros(m.shape)
         
         u,v = np.unique(s, return_counts=True)
-        u = u[:-1]   #### Not sure how to generalise
+        u = u[:-1]   
 #        print(u)
         count = 0
         for i in u:
