@@ -14,8 +14,6 @@ The image below shows the physical map of Georgetown, Guyana and its surrounding
 <p align="center">
   <img width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/physical.png">
 </p>
-<img align="center" width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/physical.png">
-
 
 The heat map below shows the availability of transportation in the same city, with lighter pixels showing areas where transportation is more available: 
 <p align="center">
