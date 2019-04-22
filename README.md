@@ -11,9 +11,7 @@ Predictions can be used to plan optimized urban expansion, estimate best- and wo
 The urban growth prediction model uses .tif files to predict urban growth on a pixel-by-pixel level for a city and its surrounding areas.
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
-<p align="center">
-  <img width="460" height="300" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/physical.PNG">
-</p>
+<img align="center" width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/Vivid_logo.png">
 
 The heat map below shows the availability of transportation in the same city, with lighter pixels showing areas where transportation is more available: 
 <p align="center">
