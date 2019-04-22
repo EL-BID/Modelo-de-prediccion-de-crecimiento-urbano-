@@ -12,12 +12,12 @@ The urban growth prediction model uses .tif files to predict urban growth on a p
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/physical.png">
+  <img width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/physical.png">
 </p>
 
 The heat map below shows the availability of transportation in the same city, with lighter pixels showing areas where transportation is more available: 
 <p align="center">
-  <img width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/transport.PNG">
+  <img width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/tree/master/img/transport.png">
 </p>
 
 As in any urban growth prediction model, attractors and restrictors of will vary from one metropolitan area to another, and thus inputs will also vary accordingly. This user-friendly script clearly designates an **inputs** section, the primary and often only section that will need to be updated to fit the model to a new urban area.
