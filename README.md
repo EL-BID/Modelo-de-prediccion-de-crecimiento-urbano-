@@ -25,7 +25,10 @@ As in any urban growth prediction model, attractors and restrictors of will vary
 Using the designated inputs, a regularized spatial logistic regression model will predict urban growth on a pixel-by-pixel level within the determined boundaries, and output a binary raster file.
 
 ## Installation Guide
-This model can be run from the Anaconda prompt using the simple command `<python path\future_urban_growth_geo_v2.py>`
+This model can be run from the Anaconda prompt using the simple command 
+<p align="center">
+</p>
+`<python path\future_urban_growth_geo_v2.py>`
 
 #### Dependencies
 All inputs should be housed in the same folder with the .py script. In addition to the basic Anaconda software, the following modules will be required to run the model:
