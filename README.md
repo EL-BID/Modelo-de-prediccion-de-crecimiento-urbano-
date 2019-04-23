@@ -5,10 +5,10 @@
 ## Description and Context
 This repo contains code for running a model that predicts urban growth using heat maps and urban feature maps selected by the modeler. 
 The model extracts random samples of the defined area (which should include area beyond the current boundaries of the city), identifies thresholds for urban growth, and runs a spatial logistic regression to predict urban growth based on attractors (such as transport, quality of life, topography and amenities) and restrictors (such as bodies of water or regulated areas). 
-Predictions can be used to plan optimized urban expansion, estimate best- and worst-case scenarios regarding climate change
+Predictions can be used to plan optimized urban expansion, or estimate best- and worst-case scenarios regarding climate change.
 
 ## User Guide
-The urban growth prediction model uses .tif files to predict urban growth on a pixel-by-pixel level for a city and its surrounding areas.
+As inputs, the model uses monochrome images with standardized size and boundaries prepared from satellite images of an urban area. These images can be physical maps, density maps, or maps denoting legislative or social boundaries, depending on the conditions of the urban area and the modeler’s discretion. Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. Using these inputs, a regularized spatial logistic regression model will predict urban growth on a pixel-by-pixel level within the determined boundaries, and outputs a binary raster file.
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
 <p align="center">
