@@ -8,7 +8,7 @@ The model extracts random samples of the defined area (which should include area
 Predictions can be used to plan optimized urban expansion, or estimate best- and worst-case scenarios regarding climate change.
 
 ## User Guide
-As inputs, the model uses monochrome images with standardized size and boundaries prepared from satellite images of an urban area. These images can be physical maps, density maps, or maps denoting legislative or social boundaries, depending on the conditions of the urban area and the modeler’s discretion. Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. Using these inputs, a regularized spatial logistic regression model will predict urban growth on a pixel-by-pixel level within the determined boundaries, and outputs a binary raster file.
+As inputs, the model uses monochrome images with standardized size and boundaries prepared from satellite images of an urban area. These images can be physical maps, density maps, or maps denoting legislative or social boundaries, depending on the conditions of the urban area and the modeler’s discretion. Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. 
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
 <p align="center">
@@ -21,6 +21,8 @@ The heat map below shows the availability of transportation in the same city, wi
 </p>
 
 As in any urban growth prediction model, attractors and restrictors of will vary from one metropolitan area to another, and thus inputs will also vary accordingly. This user-friendly script clearly designates an **inputs** section, the primary and often only section that will need to be updated to fit the model to a new urban area.
+
+Using the designated inputs, a regularized spatial logistic regression model will predict urban growth on a pixel-by-pixel level within the determined boundaries, and output a binary raster file.
 
 ## Installation Guide
 This model can be run from the Anaconda prompt using the simple command `<python path\future_urban_growth_geo_v2.py>`
