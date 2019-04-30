@@ -3,7 +3,8 @@
 # Urban Growth Prediction Model
 
 ## Description and Context
-This repo contains code for running a model that predicts urban growth using a spatially-explicit stochastic land change modelling framework to produce projections of urban growth in a designated urban area and its surroundings. 
+This repo contains code to run a model that predicts urban growth using a spatially-explicit stochastic land change modelling framework to produce projections of urban growth in a designated urban area and its surroundings. 
+
 The model is based on GIS-based frameworks such as [SLEUTH](https://www.sciencedirect.com/science/article/pii/S019897150100014X?via%3Dihub) and [LEAM](https://en.wikipedia.org/wiki/Land_Use_Evolution_and_Impact_Assessment_Model), which use raster data inputs (representing features like slope, no growth areas, transportation networks, and amenities) to forecast future urban land development patterns. Coupled sub-models integrate per-capita future housing demand with an urban suitability surface based on spatial drivers of urban change. 
 
 The model extracts random samples of the defined area (which should include area beyond the current boundaries of the city), identifies thresholds for urban growth, and runs a spatial logistic regression to predict urban growth based on attractors (such as transport, quality of life, topography and amenities) and restrictors (such as bodies of water or regulated areas). 
@@ -16,6 +17,7 @@ The framework focuses on the following key implementation issues:
 3. Expandability: The framework is extensible and future versions of this ever-improving model can integrate more dynamic implementation of spatial gradients and land use types. 
 4. Compatibility: The interface of the framework is designed to be interoperable with concurrent modelling efforts such as SLEUTH and can be extended to include further sub-modules. 
 
+This repo is actively maintained and incremental developments will occassionally be added here, including additional tutorials, examples or improvements to the script.
 
 ## User Guide
 The simulation model takes the following as inputs:  
@@ -149,7 +151,7 @@ All inputs should be housed in the same folder with the .py script. In addition 
 
 
 ## How to Contribute
-Questions or suggestions about this project can be directed to Neeraj Baruah at neeraj.baruah@vivideconomics.com. For all contributions to this project, this repository may be forked directly. 
+Questions or suggestions about this project can be directed to Neeraj Baruah at [neeraj.baruah@vivideconomics.com](neeraj.baruah@vivideconomics.com). For all contributions to this project, this repository may be forked directly. 
 
 ## Authors
 [Neeraj Baruah](http://www.vivideconomics.com/meet-our-team/neeraj-baruah)
