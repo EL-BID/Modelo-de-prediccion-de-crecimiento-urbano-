@@ -4,7 +4,7 @@
 
 ## Description and Context
 This repo contains code for running a model that predicts urban growth using a spatially-explicit stochastic land change modelling framework to produce projections of urban growth in a designated urban area and its surroundings. 
-The model is based on GIS-based frameworks such as (SLEUTH)[https://www.sciencedirect.com/science/article/pii/S019897150100014X?via%3Dihub] and (LEAM)[https://en.wikipedia.org/wiki/Land_Use_Evolution_and_Impact_Assessment_Model], which use raster data inputs (representing features like slope, no growth areas, transportation networks, and amenities) to forecast future urban land development patterns. Coupled sub-models integrate per-capita future housing demand with an urban suitability surface based on spatial drivers of urban change. 
+The model is based on GIS-based frameworks such as [SLEUTH](https://www.sciencedirect.com/science/article/pii/S019897150100014X?via%3Dihub) and [LEAM](https://en.wikipedia.org/wiki/Land_Use_Evolution_and_Impact_Assessment_Model), which use raster data inputs (representing features like slope, no growth areas, transportation networks, and amenities) to forecast future urban land development patterns. Coupled sub-models integrate per-capita future housing demand with an urban suitability surface based on spatial drivers of urban change. 
 
 The model extracts random samples of the defined area (which should include area beyond the current boundaries of the city), identifies thresholds for urban growth, and runs a spatial logistic regression to predict urban growth based on attractors (such as transport, quality of life, topography and amenities) and restrictors (such as bodies of water or regulated areas). 
 
@@ -153,6 +153,7 @@ Questions or suggestions about this project can be directed to Neeraj Baruah at 
 
 ## Authors
 [Neeraj Baruah](http://www.vivideconomics.com/meet-our-team/neeraj-baruah)
+
 @ngbaruah
 
 ## License
