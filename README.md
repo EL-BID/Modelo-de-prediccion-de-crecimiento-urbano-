@@ -128,25 +128,31 @@ The heat map below shows the availability of transportation in the same city, wi
 
 As in any urban growth prediction model, attractors and restrictors of will vary from one metropolitan area to another, and thus inputs will also vary accordingly. This user-friendly script clearly designates an **inputs** section, the primary and often only section that will need to be updated to fit the model to a new urban area.
 
-Using the designated inputs, a regularized spatial logistic regression model will predict urban growth on a pixel-by-pixel level within the determined boundaries, and output a binary raster file.
+Using the designated inputs, a regularized spatial logistic regression model will predict urban growth on a pixel-by-pixel level within the determined boundaries. The model produces the following outputs: 
+(1)	attraction surface (interim)
+(2)	combined attractor and restrictor surface (interim)
+(3)	binary predictor file (1=development likely, 0 otherwise)
+(4)	log file
+The binary predictor file can be further processed in QGIS or other comparable software to produce hot spot, kernel density, or other analyses to identify the degree of development in parts of the designated area. 
+[NEERAJ PLEASE INSERT HI-RES BEAUTIFUL IMAGE OF HOTSPOT ANALYSIS HERE!]
+
 
 ## Installation Guide
 This model can be run from the Anaconda prompt using the simple command `<python path\future_urban_growth_geo_v2.py>`
 
 #### Dependencies
 All inputs should be housed in the same folder with the .py script. In addition to the basic Anaconda software, the following modules will be required to run the model:
-
-`<osgeo>` 
-
+`<osgeo>` including `<gdal>`, `<ogr>`, `<osr>` (suggested installation of gdal through Anaconda prompt)
 `<numpy>`
-
 `<pandas>`
-
 `<sklearn>`
 
+
 ## How to Contribute
-## Code of Conduct
+Questions or suggestions about this project can be directed to Neeraj Baruah at neeraj.baruah@vivideconomics.com. For all contributions to this project, this repository may be forked directly. 
+
 ## Authors
+Neeraj Baruah (http://www.vivideconomics.com/meet-our-team/neeraj-baruah)
 @ngbaruah
 
 ## License
