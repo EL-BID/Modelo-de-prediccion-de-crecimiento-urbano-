@@ -3,12 +3,118 @@
 # Urban Growth Prediction Model
 
 ## Description and Context
-This repo contains code for running a model that predicts urban growth using heat maps and urban feature maps selected by the modeler. 
+This repo contains code for running a model that predicts urban growth using a spatially-explicit stochastic land change modelling framework to produce projections of urban growth in a designated urban area and its surroundings. 
+The model is based on GIS-based frameworks such as (SLEUTH)[https://www.sciencedirect.com/science/article/pii/S019897150100014X?via%3Dihub] and (LEAM)[https://en.wikipedia.org/wiki/Land_Use_Evolution_and_Impact_Assessment_Model], which use raster data inputs (representing features like slope, no growth areas, transportation networks, and amenities) to forecast future urban land development patterns. Coupled sub-models integrate per-capita future housing demand with an urban suitability surface based on spatial drivers of urban change. 
+
 The model extracts random samples of the defined area (which should include area beyond the current boundaries of the city), identifies thresholds for urban growth, and runs a spatial logistic regression to predict urban growth based on attractors (such as transport, quality of life, topography and amenities) and restrictors (such as bodies of water or regulated areas). 
-Predictions can be used to plan optimized urban expansion, or estimate best- and worst-case scenarios regarding climate change.
+
+The goal of this work is to accessibly generate development attractiveness maps and growth projections that are spatially-explicit, based on available datasets, and require little human intervention to produce. Such maps and projections can help inform policy decisions and elicit stakeholder input about growth and its effects. They can be used to plan optimized urban expansion, or estimate best- and worst-case scenarios regarding climate resilience.
+
+The framework focuses on the following key implementation issues: 
+(1) Accessibility: The model is user-friendly and can be run by someone with minimal training on the subject. This opens access for many small municipalities and local governments where urban growth modelling is currently not readily accessible and there is relatively little experience with formally forecasting future land-use patterns. 
+(2) Modifiability: A variety of data inputs from a variety of sources – stakeholder inputs, variables extracted from satellite imagery, crowd-sourced geographic information (such as Open Street Maps) – can be accommodated in the framework. New data sources can be easily integrated and updated. 
+(3) Expandability: The framework is extensible and future versions of this ever-improving model can integrate more dynamic implementation of spatial gradients and land use types. 
+(4) Compatibility: The interface of the framework is designed to be interoperable with concurrent modelling efforts such as SLEUTH and can be extended to include further sub-modules. 
+
 
 ## User Guide
-As inputs, the model uses monochrome images with standardized size and boundaries prepared from satellite images of an urban area. These images can be physical maps, density maps, or maps denoting legislative or social boundaries, depending on the conditions of the urban area and the modeler’s discretion. Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. 
+The simulation model takes the following as inputs:  
+(1) the designated potential urbanization surface 
+(2) the number of 30m urban cells needed per year or till the end year of simulation corresponding to the urban housing demand (in km2) 
+(3) a coefficient denoting the weight of the attractiveness index,
+(4) a coefficient denoting the weight of random or spontaneous growth,
+(5) a coefficient denoting the agricultural penalty factor,
+(6) raster inputs. The raster inputs can be prepared in QGIS or another comparable software, and can take three forms: 
+•	continuous maps which are usually distance to certain features of interest such as transportation, 
+•	density of features of interest such as restaurants,
+•	dummy variables signifying zones where development is to be restricted (for instance, protected and highly flood-prone areas). 
+Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. Examples of some raster data as input can be seen in the table below:
+
+<table>
+    <thead>
+        <tr>
+            <th>Indices</th>
+            <th>Attractors</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=7>Agglomeration</td>
+            <td>Proximity to and density of employment locations</td>
+        </tr>
+        <tr>
+            <td>Proximity to CBD and centre of commerce</td>
+        </tr>
+        <tr>
+            <td>Proximity to markets</td>
+        </tr>
+        <tr>
+            <td>Proximity to industrial areas</td>
+        </tr>
+        <tr>
+            <td>Proximity to the river bank</td>
+        </tr>
+        <tr>
+            <td>Proximity to Demerara bridge</td>
+        </tr>
+        <tr>
+            <td>Proximity to airports</td>
+        </tr>
+        <tr>
+            <td rowspan=7>Amenities</td>
+            <td>Proximity to and density of consumption centres</td>
+        </tr>
+        <tr>
+            <td>Proximity to and density of social services</td>
+        </tr>
+        <tr>
+            <td>Proximity to Government Housing Schemes</td>
+        </tr>
+        <tr>
+            <td>Proximity to Utilities</td>
+        </tr>
+        <tr>
+            <td rowspan=7>Transport</td>
+            <td>Proximity to primary, secondary and tertiary roads</td>
+        </tr>
+        <tr>
+            <td>Density of all roads including residential</td>
+        </tr>
+        <tr>
+            <td>Proximity to transport hubs</td>
+        </tr>
+        <tr>
+            <td rowspan=7>Topography</td>
+            <td>Elevation and slope</td>
+        </tr>
+        <tr>
+            <td>Topographic Diversity Index</td>
+        </tr>
+        <tr>
+            <td>Land surface temperature (day and night)</td>
+        </tr>
+        <tr>
+            <td rowspan=7>Quality of Life</td>
+            <td>Proximity to coasts</td>
+        </tr>
+        <tr>
+            <td>Proximity to greenspaces</td>
+        </tr>
+        <tr>
+            <td>Distance from landfill site</td>
+        </tr>
+        <tr>
+            <td>Slope suitability</td>
+        </tr>
+        <tr>
+            <td rowspan=7>Urban Extensions</td>
+            <td>Proximity to urban areas</td>
+        </tr>
+        <tr>
+            <td>Proximity to areas recently developed</td>
+        </tr>
+    </tbody>
+</table>
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
 <p align="center">
