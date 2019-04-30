@@ -11,23 +11,23 @@ The model extracts random samples of the defined area (which should include area
 The goal of this work is to accessibly generate development attractiveness maps and growth projections that are spatially-explicit, based on available datasets, and require little human intervention to produce. Such maps and projections can help inform policy decisions and elicit stakeholder input about growth and its effects. They can be used to plan optimized urban expansion, or estimate best- and worst-case scenarios regarding climate resilience.
 
 The framework focuses on the following key implementation issues: 
-(1) Accessibility: The model is user-friendly and can be run by someone with minimal training on the subject. This opens access for many small municipalities and local governments where urban growth modelling is currently not readily accessible and there is relatively little experience with formally forecasting future land-use patterns. 
-(2) Modifiability: A variety of data inputs from a variety of sources – stakeholder inputs, variables extracted from satellite imagery, crowd-sourced geographic information (such as Open Street Maps) – can be accommodated in the framework. New data sources can be easily integrated and updated. 
-(3) Expandability: The framework is extensible and future versions of this ever-improving model can integrate more dynamic implementation of spatial gradients and land use types. 
-(4) Compatibility: The interface of the framework is designed to be interoperable with concurrent modelling efforts such as SLEUTH and can be extended to include further sub-modules. 
+1. Accessibility: The model is user-friendly and can be run by someone with minimal training on the subject. This opens access for many small municipalities and local governments where urban growth modelling is currently not readily accessible and there is relatively little experience with formally forecasting future land-use patterns. 
+2. Modifiability: A variety of data inputs from a variety of sources – stakeholder inputs, variables extracted from satellite imagery, crowd-sourced geographic information (such as Open Street Maps) – can be accommodated in the framework. New data sources can be easily integrated and updated. 
+3. Expandability: The framework is extensible and future versions of this ever-improving model can integrate more dynamic implementation of spatial gradients and land use types. 
+4. Compatibility: The interface of the framework is designed to be interoperable with concurrent modelling efforts such as SLEUTH and can be extended to include further sub-modules. 
 
 
 ## User Guide
 The simulation model takes the following as inputs:  
-(1) the designated potential urbanization surface 
-(2) the number of 30m urban cells needed per year or till the end year of simulation corresponding to the urban housing demand (in km2) 
-(3) a coefficient denoting the weight of the attractiveness index,
-(4) a coefficient denoting the weight of random or spontaneous growth,
-(5) a coefficient denoting the agricultural penalty factor,
-(6) raster inputs. The raster inputs can be prepared in QGIS or another comparable software, and can take three forms: 
-•	continuous maps which are usually distance to certain features of interest such as transportation, 
-•	density of features of interest such as restaurants,
-•	dummy variables signifying zones where development is to be restricted (for instance, protected and highly flood-prone areas). 
+1. the designated potential urbanization surface 
+2. the number of 30m urban cells needed per year or till the end year of simulation corresponding to the urban housing demand (in km2) 
+3. a coefficient denoting the weight of the attractiveness index,
+4. a coefficient denoting the weight of random or spontaneous growth,
+5. a coefficient denoting the agricultural penalty factor,
+6. raster inputs. The raster inputs can be prepared in QGIS or another comparable software, and can take three forms: 
+- continuous maps which are usually distance to certain features of interest such as transportation, 
+- density of features of interest such as restaurants,
+- dummy variables signifying zones where development is to be restricted (for instance, protected and highly flood-prone areas). 
 Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. Examples of some raster data as input can be seen in the table below:
 
 <table>
