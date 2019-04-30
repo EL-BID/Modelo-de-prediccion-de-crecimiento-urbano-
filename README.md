@@ -61,7 +61,7 @@ Each image should only contain information on a single feature, as each will be 
             <td>Proximity to airports</td>
         </tr>
         <tr>
-            <td rowspan=7>Amenities</td>
+            <td rowspan=4>Amenities</td>
             <td>Proximity to and density of consumption centres</td>
         </tr>
         <tr>
@@ -74,7 +74,7 @@ Each image should only contain information on a single feature, as each will be 
             <td>Proximity to Utilities</td>
         </tr>
         <tr>
-            <td rowspan=7>Transport</td>
+            <td rowspan=3>Transport</td>
             <td>Proximity to primary, secondary and tertiary roads</td>
         </tr>
         <tr>
@@ -84,7 +84,7 @@ Each image should only contain information on a single feature, as each will be 
             <td>Proximity to transport hubs</td>
         </tr>
         <tr>
-            <td rowspan=7>Topography</td>
+            <td rowspan=3>Topography</td>
             <td>Elevation and slope</td>
         </tr>
         <tr>
@@ -94,7 +94,7 @@ Each image should only contain information on a single feature, as each will be 
             <td>Land surface temperature (day and night)</td>
         </tr>
         <tr>
-            <td rowspan=7>Quality of Life</td>
+            <td rowspan=4>Quality of Life</td>
             <td>Proximity to coasts</td>
         </tr>
         <tr>
@@ -107,7 +107,7 @@ Each image should only contain information on a single feature, as each will be 
             <td>Slope suitability</td>
         </tr>
         <tr>
-            <td rowspan=7>Urban Extensions</td>
+            <td rowspan=2>Urban Extensions</td>
             <td>Proximity to urban areas</td>
         </tr>
         <tr>
