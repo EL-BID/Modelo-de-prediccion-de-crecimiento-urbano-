@@ -153,7 +153,7 @@ All inputs should be housed in the same folder with the .py script. In addition 
 
 
 ## How to Contribute
-Questions or suggestions about this project can be directed to Neeraj Baruah at [neeraj.baruah@vivideconomics.com](neeraj.baruah@vivideconomics.com). For all contributions to this project, this repository may be forked directly. 
+Questions or suggestions about this project can be directed to Neeraj Baruah at <neeraj.baruah@vivideconomics.com>. For all contributions to this project, this repository may be forked directly. 
 
 ## Authors
 [Neeraj Baruah](http://www.vivideconomics.com/meet-our-team/neeraj-baruah)
