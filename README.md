@@ -27,9 +27,9 @@ The simulation model takes the following as inputs:
 4. a coefficient denoting the weight of random or spontaneous growth,
 5. a coefficient denoting the agricultural penalty factor,
 6. raster inputs. The raster inputs can be prepared in QGIS or another comparable software, and can take three forms: 
-  - continuous maps which are usually distance to certain features of interest such as transportation, 
-  - density of features of interest such as restaurants,
-  - dummy variables signifying zones where development is to be restricted (for instance, protected and highly flood-prone areas). 
+   - continuous maps which are usually distance to certain features of interest such as transportation, 
+   - density of features of interest such as restaurants,
+   - dummy variables signifying zones where development is to be restricted (for instance, protected and highly flood-prone areas). 
 
 
 Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. Examples of some raster data as input can be seen in the table below:
