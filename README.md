@@ -123,13 +123,25 @@ Each image should only contain information on a single feature, as each will be 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
 
 <p align="center">
-  <img width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/physical.png">
+  <img width="400" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/physical.png">
 </p>
 
 The heat map below shows the availability of transportation in the same city, with lighter pixels showing areas where transportation is more available: 
 
 <p align="center">
-  <img width="460" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/transport.png">
+  <img width="400" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/transport.png">
+</p>
+
+The restrictor file will change depending on the scenario being tested (changes can be prepared in QGIS or similar software). For Georgetown, one restrictor file was prepared to reflect the "business as usual" scenario, including only the most bastic restrictors:
+
+<p align="center">
+  <img width="400" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_business_as_usual.png">
+</p>
+
+Another restrictor file was prepared to project growth under a "smart" scenario, in which additional climatalogical factors, conservation efforts, and social protections were added: 
+
+<p align="center">
+  <img width="400" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_smart_scenario.png">
 </p>
 
 
@@ -140,6 +152,7 @@ Using the designated inputs, a regularized spatial logistic regression model wil
 2.	combined attractor and restrictor surface (interim)
 3.	binary predictor file (1=development likely, 0 otherwise)
 4.	log file
+
 The binary predictor file can be further processed in QGIS or other comparable software to produce hot spot, kernel density, or other analyses to identify the degree of development in parts of the designated area. 
 
 ![Hotspot analysis overlaid on existing land use map](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/scenarios_hotspots.png "Hotspot analysis overlaid on existing land use map")
