@@ -121,14 +121,10 @@ Each image should only contain information on a single feature, as each will be 
 </table>
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
-<p align="center">
-  <img width="460" src="https://raw.githubusercontent.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/master/img/physical.PNG?token=ACL46SIEMLFJ4AS6ABRQDZS4Y6FWW">
-</p>
+![Physical map of Georgetown](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/physical.png "Physical map of Georgetown")
 
 The heat map below shows the availability of transportation in the same city, with lighter pixels showing areas where transportation is more available: 
-<p align="center">
-  <img width="460" src="https://raw.githubusercontent.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/master/img/transport.PNG?token=ACL46SNHQAMOOFWIEMQXAHC4Y6GBU">
-</p>
+![Transport density map of Georgetown](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/transport.png "Transport density map of Georgetown")
 
 As in any urban growth prediction model, attractors and restrictors of will vary from one metropolitan area to another, and thus inputs will also vary accordingly. This user-friendly script clearly designates an **inputs** section, the primary and often only section that will need to be updated to fit the model to a new urban area.
 
