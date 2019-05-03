@@ -121,8 +121,7 @@ Each image should only contain information on a single feature, as each will be 
 </table>
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
-![Physical map of Georgetown](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/physical.png "Physical map of Georgetown")
-<img height="239" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/physical.png">
+<img aligh="center" height="500" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/physical.png">
 
 The heat map below shows the availability of transportation in the same city, with lighter pixels showing areas where transportation is more available: 
 ![Transport density map of Georgetown](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/transport.png "Transport density map of Georgetown")
