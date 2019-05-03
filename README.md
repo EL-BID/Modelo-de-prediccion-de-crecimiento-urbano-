@@ -135,13 +135,13 @@ The heat map below shows the availability of transportation in the same city, wi
 The restrictor file will change depending on the scenario being tested (changes can be prepared in QGIS or similar software). For Georgetown, one restrictor file was prepared to reflect the "business as usual" scenario, including only the most bastic restrictors:
 
 <p align="center">
-  <img width="450" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_business_as_usual.png">
+  <img width="500" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_business_as_usual.png">
 </p>
 
 Another restrictor file was prepared to project growth under a "smart" scenario, in which additional climatalogical factors, conservation efforts, and social protections were added: 
 
 <p align="center">
-  <img width="450" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_smart_scenario.png">
+  <img width="500" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_smart_scenario.png">
 </p>
 
 
