@@ -34,6 +34,7 @@ The simulation model takes the following as inputs:
 
 Each image should only contain information on a single feature, as each will be assigned a positive or negative weight. Examples of some raster data as input can be seen in the table below:
 
+<p align="center">
 <table>
     <thead>
         <tr>
@@ -119,6 +120,7 @@ Each image should only contain information on a single feature, as each will be 
         </tr>
     </tbody>
 </table>
+</p>
 
 The image below shows the physical map of Georgetown, Guyana and its surroundings, with higher altitude shown in lighter pixels: 
 
