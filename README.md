@@ -135,13 +135,13 @@ The heat map below shows the availability of transportation in the same city, wi
 The restrictor file will change depending on the scenario being tested (changes can be prepared in QGIS or similar software). For Georgetown, one restrictor file was prepared to reflect the "business as usual" scenario, including only the most bastic restrictors:
 
 <p align="center">
-  <img width="400" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_business_as_usual.png">
+  <img width="450" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_business_as_usual.png">
 </p>
 
 Another restrictor file was prepared to project growth under a "smart" scenario, in which additional climatalogical factors, conservation efforts, and social protections were added: 
 
 <p align="center">
-  <img width="400" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_smart_scenario.png">
+  <img width="450" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/restrictor_smart_scenario.png">
 </p>
 
 
@@ -163,7 +163,7 @@ This model can be run from the Anaconda prompt using the simple command `<python
 
 #### Dependencies
 All inputs should be housed in the same folder with the .py script. In addition to the basic Anaconda software, the following modules will be required to run the model:
-`<osgeo>` including `<gdal>`, `<ogr>`, `<osr>` (suggested installation of gdal through Anaconda prompt)
+`<osgeo>` including `<gdal>`, `<ogr>`, `<osr>` (suggested installation of `<gdal>` through Anaconda prompt)
 `<numpy>`
 `<pandas>`
 `<sklearn>`
