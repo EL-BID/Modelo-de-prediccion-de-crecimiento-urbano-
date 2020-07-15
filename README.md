@@ -2,7 +2,6 @@
 
 # Urban Growth Prediction Model
 [![Analytics](https://gabeacon.irvinlim.com/UA-4677001-16/Modelo-de-prediccion-de-crecimiento-urbano-/readme?useReferer)](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-)
-
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Modelo-de-prediccion-de-crecimiento-urbano-&metric=alert_status)](https://sonarcloud.io/dashboard?id=EL-BID_Modelo-de-prediccion-de-crecimiento-urbano-)
 
 ## Description and Context
