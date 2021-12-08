@@ -1,7 +1,8 @@
 <img align="right" height="39" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/Vivid_logo.png"><img align="right" width="115" height="49" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/IDB_logo.jpg">
 
 # Urban Growth Prediction Model
-[![Analytics](https://gabeacon.irvinlim.com/UA-4677001-16/Modelo-de-prediccion-de-crecimiento-urbano-/readme?useReferer)](https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-)
+![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)
+![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/Modelo-de-prediccion-de-crecimiento-urbano-/readme&dt=&tid=UA-4677001-16)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Modelo-de-prediccion-de-crecimiento-urbano-&metric=alert_status)](https://sonarcloud.io/dashboard?id=EL-BID_Modelo-de-prediccion-de-crecimiento-urbano-)
 
 ## Description and Context
