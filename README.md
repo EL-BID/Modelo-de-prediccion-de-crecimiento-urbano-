@@ -1,9 +1,14 @@
+## ⚠️ This repository is no longer maintained ⚠️
+
+This repository has been replaced by the [URSA](https://github.com/EL-BID/URSA) project. Please visit the new repository to access the updated and maintained version of the project.
+
+---
+
 <img align="right" height="39" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/Vivid_logo.png"><img align="right" width="115" height="49" src="https://github.com/EL-BID/Modelo-de-prediccion-de-crecimiento-urbano-/blob/master/img/IDB_logo.jpg">
 
 # Urban Growth Prediction Model
 ![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)
 ![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/Modelo-de-prediccion-de-crecimiento-urbano-/readme&dt=&tid=UA-4677001-16)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Modelo-de-prediccion-de-crecimiento-urbano-&metric=alert_status)](https://sonarcloud.io/dashboard?id=EL-BID_Modelo-de-prediccion-de-crecimiento-urbano-)
 
 ## Description and Context
 This repo contains code to run a model that predicts urban growth using a spatially-explicit stochastic land change modelling framework to produce projections of urban growth in a designated urban area and its surroundings. 
